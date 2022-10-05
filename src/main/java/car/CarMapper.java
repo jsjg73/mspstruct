@@ -1,12 +1,10 @@
 package car;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
+import org.mapstruct.factory.Mappers;
 
 @Mapper
 public interface CarMapper {
-
-	@Mapping(target =  "manufacturer", source = "make")
-	@Mapping(target = "seatCount", source = "numberOfSeats")
+	CarMapper INSTANCE = Mappers.getMapper(CarMapper.class);
 	CarDto carToCarDto(Car car);
 }

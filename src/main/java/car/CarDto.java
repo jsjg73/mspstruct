@@ -1,31 +1,22 @@
 package car;
 
 public class CarDto {
-	private String manufacturer;
-	private int seatCount;
-	private boolean mappedImplicitly;
+	private int id;
+	private String name;
 
-	public boolean isMappedImplicitly() {
-		return mappedImplicitly;
+	public int getId() {
+		return id;
 	}
 
-	public void setMappedImplicitly(boolean mappedImplicitly) {
-		this.mappedImplicitly = mappedImplicitly;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getManufacturer() {
-		return manufacturer;
+	public String getName() {
+		return name;
 	}
 
-	public void setManufacturer(String manufacturer) {
-		this.manufacturer = manufacturer;
-	}
-
-	public int getSeatCount() {
-		return seatCount;
-	}
-
-	public void setSeatCount(int seatCount) {
-		this.seatCount = seatCount;
+	public void setName(String name) {
+		this.name = name;
 	}
 }

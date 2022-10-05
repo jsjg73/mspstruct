@@ -1,31 +1,22 @@
 package car;
 
 public class Car {
-	private String make;
-	private int numberOfSeats;
-	private boolean mappedImplicitly;
+	private int id;
+	private String name;
 
-	public String getMake() {
-		return make;
+	public int getId() {
+		return id;
 	}
 
-	public void setMake(String make) {
-		this.make = make;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public int getNumberOfSeats() {
-		return numberOfSeats;
+	public String getName() {
+		return name;
 	}
 
-	public void setNumberOfSeats(int numberOfSeats) {
-		this.numberOfSeats = numberOfSeats;
-	}
-
-	public boolean isMappedImplicitly() {
-		return mappedImplicitly;
-	}
-
-	public void setMappedImplicitly(boolean mappedImplicitly) {
-		this.mappedImplicitly = mappedImplicitly;
+	public void setName(String name) {
+		this.name = name;
 	}
 }
